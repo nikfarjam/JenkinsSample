@@ -21,6 +21,7 @@ public class StringUtilTest {
         assertTrue(util.isEmpty(""));
         assertTrue(util.isEmpty("   "));
         assertFalse(util.isEmpty("1"));
+        assertFalse(util.isEmpty(" 1 "));
 
     }
 }
