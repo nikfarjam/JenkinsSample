@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
 
@@ -22,6 +23,13 @@ public class StringUtilTest {
         assertTrue(util.isEmpty("   "));
         assertFalse(util.isEmpty("1"));
         assertFalse(util.isEmpty(" 1 "));
+    }
 
+    @Test
+    public void testEquality(){
+        String sample = "    ABC  ";
+        String origin = new String(sample);
+        util.isEmpty(sample);
+        assertEquals(sample, origin);
     }
 }
