@@ -4,7 +4,7 @@
 public class StringUtilImpl implements StringUtil {
     public boolean isEmpty(String str) {
         if (str == null) {
-            return false;
+            return true;
         }
         if (str.length() == 0) {
             return true;
