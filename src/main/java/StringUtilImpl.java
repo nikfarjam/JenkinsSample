@@ -15,8 +15,4 @@ public class StringUtilImpl implements StringUtil {
         return false;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
 }
